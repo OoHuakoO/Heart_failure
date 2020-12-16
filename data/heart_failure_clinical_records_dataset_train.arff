@@ -1,18 +1,18 @@
 @relation heart_failure_clinical_records_dataset_train
 
 @attribute age numeric
-@attribute anaemia numeric
+@attribute anaemia {0,1}
 @attribute creatinine_phosphokinase numeric
-@attribute diabetes numeric
+@attribute diabetes {0,1}
 @attribute ejection_fraction numeric
-@attribute high_blood_pressure numeric
+@attribute high_blood_pressure {0,1}
 @attribute platelets numeric
 @attribute serum_creatinine numeric
 @attribute serum_sodium numeric
-@attribute sex numeric
-@attribute smoking numeric
+@attribute sex {0,1}
+@attribute smoking {0,1}
 @attribute time numeric
-@attribute DEATH_EVENT numeric
+@attribute DEATH_EVENT {0,1}
 
 @data
 

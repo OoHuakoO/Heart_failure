@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 10px 20px 20px 10px; background-color: #F8F8FF;">
         <h1 style="font-size: 50px; font-weight: bold; margin-top: 50px; font-family: 'Mali', cursive; text-align: center;">ประวัติ</h1>
-    <?php include 'log.php' ?>
+ 
 
     <br>
     <div class="form" style="width: 100%; padding: 10px; border-radius: 6px; background: #FFFFFF; box-shadow: 0 0 8px black; ">

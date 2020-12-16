@@ -27,6 +27,7 @@
         <a href="home.html"><button type="button" class="btn btn-secondary" style="font-family: 'Mali', cursive; border: none; border-radius: 5px; font-size: 16px; width: 150px; padding: 10px;">ย้อนกลับ</button></a>
         <h1></h1>
     </div>
+    <?php include 'results2.php'?>
 
 </body>
 </html>

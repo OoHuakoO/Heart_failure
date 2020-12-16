@@ -18,7 +18,6 @@
     $inputfile = fopen("h-input.arff","w") or die("Unable to open file!");
     $text = '
         @RELATION heart_failure
-        @attribute sex {0,1}
         @attribute age numeric
         @attribute anaemia {0,1}
         @attribute creatinine_phosphokinase numeric
@@ -28,18 +27,19 @@
         @attribute platelets numeric
         @attribute serum_creatinine numeric
         @attribute serum_sodium numeric
+        @attribute sex {0,1}
         @attribute smoking {0,1}
         @attribute DEATH_EVENT {0,1}
         @DATA '
-           .$sex.','.$age.','.$redblood.','.$ensyne.','.$sweet.','.$heart.','.$kwamdan.','.$ketblood
-        .','.$creatine.','.$sodium.','.$smokeweed.',?';
+           .$age.','.$redblood.','.$ensyne.','.$sweet.','.$heart.','.$kwamdan.','.$ketblood
+        .','.$creatine.','.$sodium.','.$sex.','.$smokeweed.',?';
     fwrite($inputfile,$text);
     fclose($inputfile);
 
     #save data from form to $data
     $data = [$fname,$lname,$age,$sex,$redblood,$ensyne,$sweet,$heart,$kwamdan,$ketblood,$creatine,$sodium,$smokeweed];
     #execute weka
-    $cmd = "java -cp ..\Weka-3-8\weka.jar weka.classifiers.bayes.NaiveBayes -T h-input.arff -l model\Heart-Bayes.model -p 0";
+    $cmd = "java -cp ..\weka.jar weka.classifiers.bayes.NaiveBayes -T ..\heart_failure\h-input.arff -l ..\heart_failure\model\NaiveBayes.model -p 0";
     exec($cmd,$output);
 
     #pass data by session

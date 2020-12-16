@@ -14,7 +14,7 @@
     for($i=0;$i<sizeof($his);$i++){
         for($j=0;$j<sizeof($his[$i]);$j++){
             //edit sex
-            if($j==4){
+            if($j==3){
                 if($his[$i][$j]=='0'){
                     $his[$i][$j] = str_replace('0','ชาย',$his[$i][$j]);
                 }else{
@@ -23,7 +23,7 @@
             }
 
             //edit redblood
-            if($j==5){
+            if($j==4){
                 if($his[$i][$j]=='0'){
                     $his[$i][$j] = str_replace('0','ลดลง',$his[$i][$j]);
                 }else if($his[$i][$j]=='1'){
@@ -32,7 +32,7 @@
             }
 
             //edit sweet 
-            if($j==7){
+            if($j==6){
                 if($his[$i][$j]=='0'){
                     $his[$i][$j] = str_replace('0','เป็น',$his[$i][$j]);
                 }else{
@@ -41,7 +41,7 @@
             }
 
             //edit lohit
-            if($j==9){
+            if($j==8){
                if($his[$i][$j]=='0'){
                     $his[$i][$j] = str_replace('0','เป็น',$his[$i][$j]);
                 }else{
@@ -50,14 +50,20 @@
             }
 
             //edit smokeweed
-            if($j==13){
+            if($j==12){
                 if($his[$i][$j]=='0'){
                     $his[$i][$j] = str_replace('0','สูบ',$his[$i][$j]);
                 }else{
                     $his[$i][$j] = str_replace('1','ไม่สูบ',$his[$i][$j]);
                 }
             }
-           
+            if($j==13){
+                if($his[$i][$j]=='0'){
+                    $his[$i][$j] = str_replace('0','เป็นภาวะหัวใจล้มเหลว',$his[$i][$j]);
+                }else{
+                    $his[$i][$j] = str_replace('1','ไม่เป็นภาวะหัวใจล้มเหลว',$his[$i][$j]);
+                }
+            }
         }
     }
 ?>

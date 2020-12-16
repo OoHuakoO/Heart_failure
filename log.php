@@ -14,86 +14,52 @@
     for($i=0;$i<sizeof($his);$i++){
         for($j=0;$j<sizeof($his[$i]);$j++){
             //edit sex
-            if($j==3){
-                if($his[$i][$j]=='0'){
-                    $his[$i][$j] = str_replace('0','Male',$his[$i][$j]);
-                }else{
-                    $his[$i][$j] = str_replace('1','Female',$his[$i][$j]);
-                }
-            }
-
-            //edit cp
             if($j==4){
                 if($his[$i][$j]=='0'){
-                    $his[$i][$j] = str_replace('0','Typical Angina',$his[$i][$j]);
-                }else if($his[$i][$j]=='1'){
-                    $his[$i][$j] = str_replace('1','Atypical Angina',$his[$i][$j]);
-                }else if($his[$i][$j]=='2'){
-                    $his[$i][$j] = str_replace('2','Non—Anginal Pain',$his[$i][$j]);
+                    $his[$i][$j] = str_replace('0','ชาย',$his[$i][$j]);
                 }else{
-                    $his[$i][$j] = str_replace('3','Asymptotic',$his[$i][$j]);
+                    $his[$i][$j] = str_replace('1','หญิง',$his[$i][$j]);
                 }
             }
 
-            //edit fbs 
+            //edit redblood
+            if($j==5){
+                if($his[$i][$j]=='0'){
+                    $his[$i][$j] = str_replace('0','ลดลง',$his[$i][$j]);
+                }else if($his[$i][$j]=='1'){
+                    $his[$i][$j] = str_replace('1','ไม่ลดลง',$his[$i][$j]);
+                }
+            }
+
+            //edit sweet 
             if($j==7){
                 if($his[$i][$j]=='0'){
-                    $his[$i][$j] = str_replace('0','Less than 120mg/dl',$his[$i][$j]);
+                    $his[$i][$j] = str_replace('0','เป็น',$his[$i][$j]);
                 }else{
-                    $his[$i][$j] = str_replace('1','More than 120mg/dl',$his[$i][$j]);
+                    $his[$i][$j] = str_replace('1','ไม่เป็น',$his[$i][$j]);
                 }
             }
 
-            //edit restecg
-            if($j==8){
+            //edit lohit
+            if($j==9){
                 if($his[$i][$j]=='0'){
                     $his[$i][$j] = str_replace('0','Normal',$his[$i][$j]);
                 }else if($his[$i][$j]=='1'){
-                    $his[$i][$j] = str_replace('1','Having ST-T wave abnormality',$his[$i][$j]);
+                    $his[$i][$j] = str_replace('1','เป็น',$his[$i][$j]);
                 }else{
-                    $his[$i][$j] = str_replace('2','Left ventricular hyperthrophy',$his[$i][$j]);
+                    $his[$i][$j] = str_replace('2','ไม่เป็น',$his[$i][$j]);
                 }
             }
 
-            //edit exang 
-            if($j==10){
+            //edit smokeweed
+            if($j==13){
                 if($his[$i][$j]=='0'){
-                    $his[$i][$j] = str_replace('0','No',$his[$i][$j]);
+                    $his[$i][$j] = str_replace('0','สูบ',$his[$i][$j]);
                 }else{
-                    $his[$i][$j] = str_replace('1','Yes',$his[$i][$j]);
+                    $his[$i][$j] = str_replace('1','ไม่สูบ',$his[$i][$j]);
                 }
             }
-
-            //edit slope
-            if($j==12){
-                if($his[$i][$j]=='0'){
-                    $his[$i][$j] = str_replace('0','Upsloping',$his[$i][$j]);
-                }else if($his[$i][$j]=='1'){
-                    $his[$i][$j] = str_replace('1','Flat',$his[$i][$j]);
-                }else{
-                    $his[$i][$j] = str_replace('2','Downsloping',$his[$i][$j]);
-                }
-            }
-
-            //edit thal
-            if($j==14){
-                if($his[$i][$j]=='0'){
-                    $his[$i][$j] = str_replace('0','Normal',$his[$i][$j]);
-                }else if($his[$i][$j]=='1'){
-                    $his[$i][$j] = str_replace('1','Fixed Detect',$his[$i][$j]);
-                }else{
-                    $his[$i][$j] = str_replace('2','Reversible defect',$his[$i][$j]);
-                }
-            }
-
-            //edit result 
-            if($j==15){
-                if($his[$i][$j]=='0'){
-                    $his[$i][$j] = str_replace('0','Yes',$his[$i][$j]);
-                }else{
-                    $his[$i][$j] = str_replace('1','No',$his[$i][$j]);
-                }
-            }
+           
         }
     }
 ?>

@@ -1,0 +1,15 @@
+
+        @RELATION heart_failure
+        @attribute sex {0,1}
+        @attribute age numeric
+        @attribute anaemia {0,1}
+        @attribute creatinine_phosphokinase numeric
+        @attribute diabetes {0,1}
+        @attribute ejection_fraction numeric
+        @attribute high_blood_pressure {0,1}
+        @attribute platelets numeric
+        @attribute serum_creatinine numeric
+        @attribute serum_sodium numeric
+        @attribute smoking {0,1}
+        @attribute DEATH_EVENT {0,1}
+        @DATA 0,20,1,,1,,1,12312,123,13,1,?

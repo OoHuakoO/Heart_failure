@@ -23,10 +23,10 @@
     $proppc = round($prop*100,1);
     #check result 0 or 1
     if($pre[4] == '0'){
-        echo "<h3>".$data[0]." ".$data[1]." has a chance of heart disease</h3>".
+        echo "<h3>".$data[0]." ".$data[1]." เป็นภาวะหัวใจล้มเหลว</h3>".
         "<h4>Prediction confidence : ".$proppc." %<h4>";
     }else{
-        echo "<h3>".$data[0]." ".$data[1]." don't has a chance of heart disease</h3><br>".
+        echo "<h3>".$data[0]." ".$data[1]." ไม่เป็นภาวะหัวใจล้มเหลว</h3><br>".
         "<h4>Prediction confidence : ".$proppc." %<h4>";
     }
 
@@ -34,7 +34,7 @@
     $hisfile = fopen("h-his.txt","a") or die("Unable to open file!");
     $txt = 
         $data[0].",".$data[1].",".$data[2].",".$data[3].",".$data[4].",".$data[5].",".$data[6].",".$data[7]
-        .",".$data[8].",".$data[9].",".$data[10].",".$data[11].",".$data[12].",".$data[13].",".$data[14].",".$pre[4]."\n"
+        .",".$data[8].",".$data[9].",".$data[10].",".$data[11].",".$data[12].",".$pre[4]."\n"
     ;
     fwrite($hisfile,$txt);
     fclose($hisfile);

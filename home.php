@@ -51,5 +51,5 @@
     $_SESSION["data"] = $data;
 
     #redirect page to results
-    header('Location:results.php');
+    header('Location:result.php');
 ?>

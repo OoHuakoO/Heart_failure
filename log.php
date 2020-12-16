@@ -42,12 +42,10 @@
 
             //edit lohit
             if($j==9){
-                if($his[$i][$j]=='0'){
-                    $his[$i][$j] = str_replace('0','Normal',$his[$i][$j]);
-                }else if($his[$i][$j]=='1'){
-                    $his[$i][$j] = str_replace('1','เป็น',$his[$i][$j]);
+               if($his[$i][$j]=='0'){
+                    $his[$i][$j] = str_replace('0','เป็น',$his[$i][$j]);
                 }else{
-                    $his[$i][$j] = str_replace('2','ไม่เป็น',$his[$i][$j]);
+                    $his[$i][$j] = str_replace('1','ไม่เป็น',$his[$i][$j]);
                 }
             }
 

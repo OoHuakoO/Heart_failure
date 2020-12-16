@@ -16,11 +16,11 @@
             <h1 style="font-size: 50px; color:black; margin-top: 50px; font-weight: bold; margin-bottom: 100px;">ผลลัพธ์ของการทดสอบ</h1>
         </div>
     
-        <div class="container">
+        <!-- <div class="container">
             <form class="form1" name="form1" onsubmit="check()" action="index.php" method="post"> 
                 <h3 style="color: black; text-align: center ; font-family: 'Mali', cursive;">เป็นภาวะหัวใจล้มเหลว <br><br>ไม่เป็นภาวะหัวใจล้มเหลว <br><br> ไม่เป็นภาวะหัวใจล้มเหลว <br><br> ไม่เป็นภาวะหัวใจล้มเหลว</h3>
             </form>
-        </div>
+        </div> -->
     <br>
 
     <div style="text-align: center; margin-bottom: 50px;">

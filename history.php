@@ -24,22 +24,43 @@
                     <th>นามสกุล</th>
                     <th>อายุ</th>
                     <th>เพศ</th>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>7</th>
-                    <th>8</th>
-                    <th>9</th>
+                    <th>เม็ดเลือดแดงหรือฮีโมโกลบินมีการลดลงจากปกติหรือไม่?</th>
+                    <th>ระดับของเอนไซม์ CPK ในเลือด (mcg/L)</th>
+                    <th>เป็นโรคเบาหวานหรือไม่?</th>
+                    <th>เปอร์เซ็นต์ของเลือดที่ออกจากหัวใจในแต่ละครั้งเมื่อมีการบีบตัว (%)</th>
+                    <th>เป็นโรคความดันโลหิตสูงหรือไม่?</th>
+                    <th>ปริมาณเกล็ดเลือดในเลือด (kiloplatelets/mL)</th>
+                    <th>ระดับของ creatinine ที่อยู่ในเลือด (mg/dL)</th>
+                    <th>ระดับของโซเดียมที่อยู่ในเลือด (mEq/L)</th>
+                    <th>สูบบุหรี่หรือไม่?</th>
                     <th>ผลลัพธ์</th>
                 </tr>
             </thead>
         <?php for($i=0;$i<sizeof($his);$i++){ ?>
             <?php if($i==sizeof($his)-1){break;}?>
             <tbody>
-                <tr style="font-size: 13px;">
+            <tr>
+                    <td><?php echo $i+1?></td>
+                    <?php for($j=0;$j<sizeof($his[$i]);$j++){ ?>
+                    <td><?php echo $his[$i][$j]?></td>
+                    <?php } ?>
+            </tr>
+
+            </tbody>
+        <?php }?>
+        </table>
+    </div>
+    <br>
+    <br>
+
+    <div style="text-align: center; margin-bottom: 50px;">
+        <a href="home.html"><button type="button" class="btn btn-secondary" style="font-family: 'Mali', cursive; border: none; border-radius: 5px; font-size: 16px; width: 150px; padding: 10px;">ย้อนกลับ</button></a>
+    </div>
+
+</body>
+</html>
+
+ <!-- <tr style="font-size: 13px;">
                     <td>1</td>
                     <td>ฟ้าใส</td>
                     <td>สวยจัง</td>
@@ -72,17 +93,4 @@
                     <td>ไม่มีเลย</td>
                     <td>ไม่มีเลย</td>
                     <td>ไม่มีอาการของโรคซึมเศร้า <br> หรือมีอาการของโรคซึมเศร้า <br> ระดับน้อยมาก</td>
-                </tr>
-            </tbody>
-        <?php }?>
-        </table>
-    </div>
-    <br>
-    <br>
-
-    <div style="text-align: center; margin-bottom: 50px;">
-        <a href="home.html"><button type="button" class="btn btn-secondary" style="font-family: 'Mali', cursive; border: none; border-radius: 5px; font-size: 16px; width: 150px; padding: 10px;">ย้อนกลับ</button></a>
-    </div>
-
-</body>
-</html>
+                </tr> -->

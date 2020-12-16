@@ -1,0 +1,42 @@
+h1 {
+    font-family: 'Mali', cursive;
+    position: absolute;
+    margin:0;
+    font-size: 30px;
+    color: #fff;
+    z-index: 2;
+    line-height: 0px;
+    top:30px;
+}
+
+button {
+    font-family: 'Mali', cursive;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    background: #FFFFFF;
+    box-shadow: 0 0 8px black; 
+}
+
+.form1 {
+    width: 70%;
+    padding-left: 30px;
+    padding-right: 30px;
+}

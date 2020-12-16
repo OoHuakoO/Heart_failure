@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="home.css">
+        
+        <title>ภาวะหัวใจล้มเหลว</title>
+    </head>
+    <body style="background-color: #F8F8FF;">
+        <div class="container" style=" margin-bottom: 100px;">
+            <h1 style="font-size: 40px; color:white; margin-top: 50px; margin-bottom: 100px;">แบบสอบถามเพื่อการทำนายภาวะหัวใจล้มเหลว</h1>
+        </div>
+    
+        <div class="container">
+            <form class="form1" name="form1" onsubmit="check()" action="index.php" method="post"> 
+                <div class="banner">
+                    <h1>คำชี้แจง</h1>
+                </div>
+                <p style="color: black; text-align: center ; font-family: 'Mali', cursive;">
+                    โรคหัวใจและหลอดเลือด (CVDs) เป็นสาเหตุของการเสียชีวิตอันดับ 1 ของโลกโดยมีผู้เสียชีวิตประมาณ 17.9 ล้านคนในแต่ละปี ซึ่งคิดเป็น 31% ของการเสียชีวิตทั้งหมดทั่วโลก
+                    ภาวะหัวใจล้มเหลวเป็นเหตุการณ์ทั่วไปที่เกิดจาก CVD ซึ่งชุดคำถาม 12 ข้อเหล่านี้สามารถใช้ในการทำนายการเสียชีวิตจากภาวะหัวใจล้มเหลวได้ โปรดกรอกข้อมูลที่เป็นความจริง
+                </p>
+                <br/>
+    
+    
+    <!-- ข้อมูลส่วนตัว -->
+                <fieldset>
+                    <legend style="font-family: 'Mali', cursive;">ข้อมูลส่วนตัว</legend>
+                    <div class="colums">
+                        <div class="item">
+                            <label for="fname">ชื่อ<span>*</span></label>
+                            <input class="input" type="text" name="fname" required/>
+                        </div>
+                        
+                        <div class="item">
+                            <label for="lname">นามสกุล<span>*</span></label>
+                            <input class="input" type="text" name="lname" required/>
+                        </div>
+    
+                        <div class="item">
+                            <label for="sex">เพศ<span>*</span></label>
+                            <br>
+                            <label class="radio-inline"><input type="radio" value="0" name="sex" required>ชาย</label>
+                            <label class="radio-inline"><input type="radio" value="1" name="sex" >หญิง</label>
+                        </div>
+    
+                        <div class="item">
+                            <label for="age">อายุ<span>*</span></label>
+                            <input class="input" type="number" name="age" min="10" max="100" required/>
+                        </div>
+                    </div>
+                </fieldset>
+    
+    
+    <!-- คำถาม -->
+                <fieldset style="margin-top: 15px; margin-bottom: 25px; "> 
+                    <legend style="font-family: 'Mali', cursive;">คำถาม</legend>
+                    <div class="colums">
+    
+                        <div class="item">
+                            <label for="1">เม็ดเลือดแดงหรือฮีโมโกลบินมีการลดลงจากปกติหรือไม่?<span>*</span></label><br>
+                            <select name="1" class="input" required>
+                                <option value="">เลือก...</option>
+                                <option value="0">ลดลง</option>
+                                <option value="1">ไม่ลดลง</option>
+                            </select>
+                        </div>
+    
+                        <div class="item">
+                            <label for="2">ระดับของเอนไซม์ CPK ในเลือด (mcg/L)<span>*</span></label>
+                            <input type="text" id="input" placeholder="" required>
+                        </div>
+    
+                        <div class="item">
+                            <label for="3">เป็นโรคเบาหวานหรือไม่?<span>*</span></label>
+                            <select name="3" class="input" required>
+                                <option value="">เลือก...</option>
+                                <option value="0">เป็น</option>
+                                <option value="1">ไม่เป็น</option>
+                            </select>
+                        </div>
+
+                        <div class="item">
+                            <label for="4">เปอร์เซ็นต์ของเลือดที่ออกจากหัวใจในแต่ละครั้งเมื่อมีการบีบตัว (%)<span>*</span></label>
+                            <input type="text" id="input" placeholder="" required>
+                        </div>
+
+                        <div class="item">
+                            <label for="5">เป็นโรคความดันโลหิตสูงหรือไม่?<span>*</span></label>
+                            <select name="5" class="input" required>
+                                <option value="">เลือก...</option>
+                                <option value="0">เป็น</option>
+                                <option value="1">ไม่เป็น</option>
+                            </select>
+                        </div>
+
+                        <div class="item">
+                            <label for="6">ปริมาณเกล็ดเลือดในเลือด (kiloplatelets/mL)<span>*</span></label>
+                            <input type="text" id="input" placeholder="" required>
+                        </div>
+
+                        <div class="item">
+                            <label for="7">ระดับของ creatinine ที่อยู่ในเลือด (mg/dL)<span>*</span></label>
+                            <input type="text" id="input" placeholder="" required>
+                        </div>
+
+                        <div class="item">
+                            <label for="8">ระดับของโซเดียมที่อยู่ในเลือด (mEq/L)<span>*</span></label>
+                            <input type="text" id="input" placeholder="" required>
+                        </div>
+    
+                        <div class="item">
+                            <label for="9">สูบบุหรี่หรือไม่?<span>*</span></label>
+                            <select name="9" class="input" required>
+                                <option value="">เลือก...</option>
+                                <option value="0">สูบ</option>
+                                <option value="1">ไม่สูบ</option>
+                            </select>
+                        </div>
+    
+                    </div>
+                </fieldset>
+    
+                <div class="btn-block">
+                    <input class="button" type="submit" value="ส่งแบบสอบถาม" OnClick="getValue()";></input>
+                    &nbsp;
+                </div>
+            </form>
+        </div>
+        <br>
+        
+        <div class="his-link" style="text-align: center; margin-bottom: 50px;">
+            <a href="history.html" ><button type="button" class="btn btn-secondary">ดูประวัติ</button></a>
+        </div>
+    </body>
+</html>

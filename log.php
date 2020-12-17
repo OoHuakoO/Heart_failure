@@ -57,7 +57,7 @@
                     $his[$i][$j] = str_replace('1','ไม่สูบ',$his[$i][$j]);
                 }
             }
-            if($j==13){
+            if($j==14){
                 if($his[$i][$j]=='0'){
                     $his[$i][$j] = str_replace('0','เป็นภาวะหัวใจล้มเหลว',$his[$i][$j]);
                 }else{

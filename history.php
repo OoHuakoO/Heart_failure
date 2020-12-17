@@ -10,13 +10,13 @@
     <title>ประวัติ</title>
     
 </head>
-<body style="margin: 10px 20px 20px 10px; background-color: #F8F8FF;">
+<body style=" background-color: #F8F8FF;">
         <h1 style="font-size: 50px; font-weight: bold; margin-top: 50px; font-family: 'Mali', cursive; text-align: center;">ประวัติ</h1>
  
         <?php include 'log.php'?>
     <br>
-    <div class="form" style="width: 100%; padding: 10px; border-radius: 6px; background: #FFFFFF; box-shadow: 0 0 8px black; ">
-        <table class="table" style="font-family: 'Mali', cursive; text-align: center;">
+    <div class="form" style="margin-top:20px;width: 100%; padding: 5px; border-radius: 6px; background: #FFFFFF; box-shadow: 0 0 8px black; ">
+        <table class="table" style="font-size: 14px; font-family: 'Mali', cursive; text-align: center;">
             <thead>
                 <tr>
                     <th>#</th>
@@ -24,15 +24,16 @@
                     <th>นามสกุล</th>
                     <th>อายุ</th>
                     <th>เพศ</th>
-                    <th>เม็ดเลือดแดงหรือฮีโมโกลบินมีการลดลงจากปกติหรือไม่?</th>
+                    <th>เม็ดเลือดแดง มีการลดลง จากปกติหรือไม่?</th>
                     <th>ระดับของเอนไซม์ CPK ในเลือด (mcg/L)</th>
-                    <th>เป็นโรคเบาหวานหรือไม่?</th>
+                    <th>โรคเบาหวาน?</th>
                     <th>เปอร์เซ็นต์ของเลือดที่ออกจากหัวใจในแต่ละครั้งเมื่อมีการบีบตัว (%)</th>
-                    <th>เป็นโรคความดันโลหิตสูงหรือไม่?</th>
+                    <th>โรคความดันโลหิตสูง?</th>
                     <th>ปริมาณเกล็ดเลือดในเลือด (kiloplatelets/mL)</th>
                     <th>ระดับของ creatinine ที่อยู่ในเลือด (mg/dL)</th>
                     <th>ระดับของโซเดียมที่อยู่ในเลือด (mEq/L)</th>
                     <th>สูบบุหรี่หรือไม่?</th>
+                    <th>ระยะเวลาติดตามผล(วัน)</th>
                     <th>ผลลัพธ์</th>
                 </tr>
             </thead>
@@ -59,38 +60,3 @@
 
 </body>
 </html>
-
- <!-- <tr style="font-size: 13px;">
-                    <td>1</td>
-                    <td>ฟ้าใส</td>
-                    <td>สวยจัง</td>
-                    <td>20</td>
-                    <td>หญิง</td>
-                    <td>ไม่มีเลย</td>
-                    <td>เป็นบางวัน</td>
-                    <td>เป็นบ่อย</td>
-                    <td>เป็นทุกวัน</td>
-                    <td>ไม่มีเลย</td>
-                    <td>เป็นบางวัน</td>
-                    <td>เป็นบางวัน</td>
-                    <td>เป็นทุกวัน</td>
-                    <td>เป็นทุกวัน</td>
-                    <td>มีอาการของโรคซึมเศร้า <br> ระดับปานกลาง</td>
-                </tr>
-                <tr style="font-size: 13px;">
-                    <td>2</td>
-                    <td>หนุ่ยตี้</td>
-                    <td>ไม่อาบน้ำ</td>
-                    <td>18</td>
-                    <td>ชาย</td>
-                    <td>ไม่มีเลย</td>
-                    <td>เป็นบางวัน</td>
-                    <td>ไม่มีเลย</td>
-                    <td>เป็นทุกวัน</td>
-                    <td>ไม่มีเลย</td>
-                    <td>เป็นบางวัน</td>
-                    <td>ไม่มีเลย</td>
-                    <td>ไม่มีเลย</td>
-                    <td>ไม่มีเลย</td>
-                    <td>ไม่มีอาการของโรคซึมเศร้า <br> หรือมีอาการของโรคซึมเศร้า <br> ระดับน้อยมาก</td>
-                </tr> -->

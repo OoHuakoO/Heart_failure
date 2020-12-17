@@ -1,0 +1,51 @@
+age - อายุ
+
+anaemia - โรคโลหิตจาง 
+	Decrease of red blood cells or hemoglobin (boolean) - ดูการลดลงของเม็ดเลือดแดงหรือฮีโมโกลบิน (boolean)
+
+creatinine_phosphokinase - เอนไซม์ CPK (Creatinine Phosphokinase) หรือ เอนไซม์กล้ามเนื้อ
+	 Level of the CPK enzyme in the blood (mcg/L) - ดูระดับของเอนไซม์ CPK ในเลือด (mcg / L)
+
+diabetes - โรคเบาหวาน
+	If the patient has diabetes (boolean) - ดูว่าหากผู้ป่วยเป็นโรคเบาหวาน (boolean)
+
+ejection_fraction - การบีบตัวของหัวใจ
+	Percentage of blood leaving the heart at each contraction (percentage) - เปอร์เซ็นต์ของเลือดที่ออกจากหัวใจในแต่ละครั้งเมื่อมีการบีบตัว (เปอร์เซ็นต์)
+
+high_blood_pressure - โรคความดันโลหิตสูง
+	If the patient has hypertension (boolean) - ดูว่าหากผู้ป่วยมีความดันโลหิตสูง (boolean) 
+
+platelets - เกล็ดเลือด
+	Platelets in the blood (kiloplatelets/mL) - ดูปริมาณเกล็ดเลือดในเลือด (kiloplatelets/mL)
+
+serum_creatinine -  การตรวจคริอะตินินในเลือด
+ 	Level of serum creatinine in the blood (mg/dL) - ดูระดับของคริอะตินินที่อยู่ในเลือด (mg / dL)
+
+serum_sodium - การตรวจโซเดียมในเลือด
+	Level of serum sodium in the blood (mEq/L) - ดูระดับของโซเดียมที่อยู่ในเลือด (mEq/L)
+
+sex - เพศ
+	Woman or man (binary) - เพศชายหรือหญิง (binary)
+
+smoking - การสูบบุหรี่
+	If the patient smokes or not (boolean) - ดูว่าผู้ป่วยสูบบุหรี่หรือไม่ (boolean)
+
+time - เวลาติดตามผล	
+	Follow-up period (days) -  ระยะเวลาติดตามผล (วัน)
+
+DEATH_EVENT - การเสียชีวิต
+	If the patient deceased during the follow-up period (boolean) - ดูว่าผู้ป่วยเสียชีวิตในช่วงติดตามผลหรือไม่ (boolean)
+
+
+
+
+
+
+
+
+
+
+
+
+	
+

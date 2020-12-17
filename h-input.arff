@@ -13,4 +13,4 @@
         @attribute smoking {0,1}
         @attribute time numeric
         @attribute DEATH_EVENT {0,1}
-        @DATA 20,0,128,0,30,0,297000,1.6,136,0,1,20,?
+        @DATA 20,0,123,1,20,0,123123,2.4,130,0,0,33,?

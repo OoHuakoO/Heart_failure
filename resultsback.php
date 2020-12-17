@@ -23,11 +23,11 @@
     $proppc = round($prop*100,1);
     #check result 0 or 1
     if($pre[4] == '0'){
-        echo "<h3>".$data[0]." ".$data[1]." เป็นภาวะหัวใจล้มเหลว</h3>".
-        "<br><h4>Prediction confidence : ".$proppc." %<h4>";
+        echo "<h3>".$data[0]." ".$data[1]." เป็นภาวะหัวใจล้มเหลว</h3>". 
+        "<h4>&nbsp&nbsp&nbspPrediction confidence : ".$proppc." %<h4>";
     }else{
-        echo "<h3>".$data[0]." ".$data[1]." ไม่เป็นภาวะหัวใจล้มเหลว</h3><br>";
-        echo "<h4>Prediction confidence : ".$proppc." %<h4>";
+        echo "<h3>".$data[0]." ".$data[1]." ไม่เป็นภาวะหัวใจล้มเหลว</h3>".
+        "<h4>&nbsp&nbsp&nbspPrediction confidence : ".$proppc." %<h4>";
     }
 
     #save history in h-his.txt

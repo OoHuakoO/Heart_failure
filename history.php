@@ -16,25 +16,25 @@
         <?php include 'log.php'?>
     <br>
     <div class="form" style="margin-top:20px;width: 100%; padding: 5px; border-radius: 6px; background: #FFFFFF; box-shadow: 0 0 8px black; ">
-        <table class="table" style="font-size: 14px; font-family: 'Mali', cursive; text-align: center;">
+        <table class="table" style="font-size: 11px; font-family: 'Mali', cursive; text-align: center;">
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>ชื่อ</th>
-                    <th>นามสกุล</th>
-                    <th>อายุ</th>
-                    <th>เพศ</th>
-                    <th>เม็ดเลือดแดง มีการลดลง จากปกติหรือไม่?</th>
-                    <th>ระดับของเอนไซม์ CPK ในเลือด (mcg/L)</th>
-                    <th>โรคเบาหวาน?</th>
-                    <th>เปอร์เซ็นต์ของเลือดที่ออกจากหัวใจในแต่ละครั้งเมื่อมีการบีบตัว (%)</th>
-                    <th>โรคความดันโลหิตสูง?</th>
-                    <th>ปริมาณเกล็ดเลือดในเลือด (kiloplatelets/mL)</th>
-                    <th>ระดับของ creatinine ที่อยู่ในเลือด (mg/dL)</th>
-                    <th>ระดับของโซเดียมที่อยู่ในเลือด (mEq/L)</th>
-                    <th>สูบบุหรี่หรือไม่?</th>
-                    <th>ระยะเวลาติดตามผล(วัน)</th>
-                    <th>ผลลัพธ์</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Anaemia</th>
+                    <th>Creatinine phosphokinase (mcg/L)</th>
+                    <th>Diabetes</th>
+                    <th>Ejection fraction (%)</th>
+                    <th>High blood pressure</th>
+                    <th>Platelets (kiloplatelets/mL)</th>
+                    <th>Serum creatinine (mg/dL)</th>
+                    <th>Serum sodium (mEq/L)</th>
+                    <th>Smoking</th>
+                    <th>Time (Day)</th>
+                    <th>Result</th>
                 </tr>
             </thead>
         <?php for($i=0;$i<sizeof($his);$i++){ ?>
